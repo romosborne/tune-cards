@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
+import { Badge, Col, Row } from 'react-bootstrap';
 import Chords from './Chords';
 import { Tune } from './types'
 
@@ -10,10 +10,15 @@ type TuneSummaryProps = {
 class TuneSummary extends React.Component<TuneSummaryProps> {
   render() {
     return (
-      <Col className="tuneSummary">
-        <h3 className="card-title">{this.props.tune.title}</h3>
-        <div className='border'>{this.props.tune.key}</div>
-        
+      <Col className="tuneSummary mb-2">
+        <Row className="mb-1">
+          <Col xs={2}>
+            <Badge bg="secondary" className="p-2 fs-4">{this.props.tune.key}</Badge>
+          </Col>
+          <Col>
+            <h3>{this.props.tune.title}</h3>
+          </Col>
+        </Row>
         {
           this.props.tune.chordsA &&
           <Chords section="a" chords={this.props.tune.chordsA} />
@@ -28,7 +33,7 @@ class TuneSummary extends React.Component<TuneSummaryProps> {
         }
         {
           this.props.tune.notes &&
-          <p className="card-text">{this.props.tune.notes}</p>
+          <p>{this.props.tune.notes}</p>
         }
       </Col>
     );

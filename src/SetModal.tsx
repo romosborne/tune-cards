@@ -46,8 +46,8 @@ class SetModal extends React.Component<SetModalProps> {
             <div className="container">
               {
                 this.props.set.tunes.map(t =>
-                  <div className="row">
-                    <TuneSummary tune={t} key={t.title} />
+                  <div className="row" key={t.title}>
+                    <TuneSummary tune={t} />
                     <hr />
                   </div>)
               }
