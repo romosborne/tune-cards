@@ -75,7 +75,7 @@ const storage = {
         new Set(Metre.Reel, [
           { title: "Castlevania", key: "Gm" },
           { title: "Waves of Rush", key: "Dm"},
-        ]),
+        ], {fav: true}),
         new Set(Metre.Reel, [
           { title: "McKenzinator", key: "A" },
           { title: "Smelling Fresh", key: "D"},
@@ -87,7 +87,7 @@ const storage = {
         new Set(Metre.Reel, [
           { title: "Scollay's", key: "Em", chordsA: ["Em", "", "", "D", "Em", "", "B", "Em"], chordsB: ["C", "", "Am", "D", "Em", "GC", "B", "Em"] },
           { title: "Weir at Littlebeck", key: "F#m", chordsA: ["F#m", "G#m", "A", "B/A"], chordsB: ["D", "C#m", "F#5", "E", "D", "C#m", "F#", "AB"] },
-        ]),
+        ], {instrument: Instrument.Flute, tags: ["tiring"]}),
         new Set(Metre.Reel, [
           { title: "The Long Drop", key: "G" },
           { title: "Hamsters in the Kitchen", key: "D", chordsB: ["D", "F#m", "G"] },
@@ -99,7 +99,7 @@ const storage = {
         new Set(Metre.Jig, [
           { title: "Gallagher's Frolics", key: "Em" },
           { title: "Rory Gallagher", key: "A", chordsA: ["A", "B", "D", "E"] },
-        ], { title: "Turn to Stone" }),
+        ], { title: "Turn to Stone", fav: true, instrument: Instrument.Flute, tags: ["syncopated"] }),
         new Set(Metre.Jig, [
           { title: "Basil", key: "Bm" },
           { title: "AJ's", key: "E", chordsB: ["F#m", "E/G#", "C#m", "Bm", "A", "C#m", "D", "B"] },
@@ -107,16 +107,16 @@ const storage = {
         new Set(Metre.Jig, [
           { title: "Calling Wood", key: "F", chordsA: ["F", "Bb", "F", "", "F", "Dm", "C", ""], chordsB: ["Dm", "C", "Bb", "", "Gm", "F", "C", ""] },
           { title: "Mrs O'Sullivans", key: "Dm", chordsA: ["C", "F", "G", "", "Am", "G", "F"] },
-        ]),
+        ], {tags: ["smooth", "relaxing"]}),
         new Set(Metre.Jig, [
           { title: "Rolling Waves", key: "D" },
           { title: "Gap of Dreams", key: "Bm" },
           { title: "Rolling Wave", key: "D" },
-        ], { title: "The Rolling Waves" }),
+        ], { title: "The Rolling Waves", tags: ["smooth", "relaxing"] }),
         new Set(Metre.Jig, [
           { title: "Kaspar en stijn", key: "G", chordsA: ["G", "Am/G"], chordsB: ["Em", "Bm/D", "C"] },
           { title: "Serenity Hall", key: "Dm" },
-        ]),
+        ], {tags: ["bouncy a", "bouncy b"]}),
         new Set(Metre.Jig, [
           { title: "New Fiddle", key: "E", chordsA: ["E", "D"]},
           { title: "Basil the Retriever", key: "Bm" },

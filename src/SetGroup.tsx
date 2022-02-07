@@ -1,6 +1,9 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import SetCard from './SetCard';
 import { Metre, Set } from './types'
+import './SetGroup.css';
 
 type SetGroupProps = {
   metre: Metre;
@@ -24,14 +27,14 @@ class SetGroup extends React.Component<SetGroupProps> {
   render() {
     return (
       <div>
-        <div className="sticky-top bg-light"><h1>{this.displayMetre(this.props.metre)}</h1></div>
-        <div className='container'>
-        <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3">
-          {
-            this.props.sets.map((s) => <SetCard key={s.id} set={s} onDoneChange={this.props.onDoneChange} />)
-          }
-        </div>
-      </div>
+        <h1 className="p-2 mb-3 sticky-top bg-medium">{this.displayMetre(this.props.metre)}</h1>
+        <Container>
+          <Row xs={1} lg={2} xxl={3}>
+            {
+              this.props.sets.filter((s) => !!!s.done).map((s) => <SetCard key={s.id} set={s} onDoneChange={this.props.onDoneChange} />)
+            }
+          </Row>
+        </Container>
       </div>
     );
   }

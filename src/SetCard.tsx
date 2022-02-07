@@ -1,17 +1,22 @@
-import { title } from 'process';
 import React from 'react';
-import TuneSummary from './TuneSummary';
-import { Metre, Set } from './types'
+import SetModal from './SetModal';
+import { Instrument, Metre, Set } from './types'
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 
 type SetCardProps = {
   set: Set;
   onDoneChange: (setId: string, value: boolean) => void
 }
 
-class SetCard extends React.Component<SetCardProps> {
+type SetCardState = {
+  showModal: boolean;
+}
+
+class SetCard extends React.Component<SetCardProps, SetCardState> {
   constructor(props: SetCardProps) {
     super(props);
-    this.handleDoneToggle.bind(this);
+    this.state = { showModal: false };
   }
 
   displayMetre = () => {
@@ -25,6 +30,11 @@ class SetCard extends React.Component<SetCardProps> {
     return "?";
   }
 
+  displayInstrument = () => {
+    if (this.props.set.instrument === Instrument.Flute) return "🎺";
+    if (this.props.set.instrument === Instrument.Fiddle) return "🎻";
+  }
+
   displayTitle = () => {
     if (!this.props.set) return "";
     if (this.props.set.title) {
@@ -34,79 +44,62 @@ class SetCard extends React.Component<SetCardProps> {
     }
   }
 
-  handleDoneToggle = (event: React.ChangeEvent<HTMLInputElement>) => {
-    this.props.onDoneChange(this.props.set.id, event.target.checked);
-    console.log({ event });
+  markSetDone = () => {
+    console.log("Setting set done");
+    this.props.onDoneChange(this.props.set.id, true);
+  }
+
+  showModal = () => {
+    this.setState({ showModal: true });
+  }
+
+  closeModal = () => {
+    this.setState({ showModal: false });
   }
 
   render() {
-    var header = <div className="row justify-content-between">
-      <div className="col-1">
-        <span className="badge rounded-pill bg-danger">{this.displayMetre()}</span>
-      </div>
-      <div className="col-10">
-        <h1>{this.displayTitle()}</h1>
-      </div>
-      <div className="col-1">
-        <div className="form-check">
-          <input
-            className="form-check-input ml-1"
-            type="checkbox"
-            checked={this.props.set.done}
-            onChange={this.handleDoneToggle}
-          />
-        </div>
-      </div>
-      <hr />
-    </div>
-
-    var body = <div className="container">
-      <div className="row">
-        {
-          this.props.set.tunes.map(t =>
-            <TuneSummary tune={t} key={t.title} />)
-        }
-      </div>
-      {
-        this.props.set.tags && this.props.set.tags.length > 0 &&
-        <div className="text-start">
-          <strong>Tags: </strong>
-          {
-            this.props.set.tags.map(t =>
-              <span
-                className="badge rounded-pill bg-secondary"
-                key={t}>
-                {t}
-              </span>)
-          }
-        </div>
-      }
-    </div>
-
     return (
-      <div className="col mb-3">
-        <div className='modal fade' id={'modalid-' + this.props.set.id}>
-          <div className='modal-dialog modal-xl modal-dialog-centered'>
-            <div className='modal-content'>
-              <div className='modal-header'>
-                <h5 className='modal-title'>{this.displayTitle()}</h5>
-              </div>
-              <div className='modal-body'>
-                {body}
-              </div>
-            </div>
-          </div>
-        </div>
+      <Col className="mb-3">
+        <SetModal set={this.props.set} visible={this.state.showModal} close={this.closeModal} />
         <div className="border bg-body p-3 rounded-3">
-          {header}
-          <div className="body">
-            <button type='button' className='btn btn-primary' data-bs-toggle="modal" data-bs-target={'#modalid-' + this.props.set.id}>
-              Make big
-            </button>
-            {body}
+          <div className="d-flex justify-content-between align-items-start mb-3">
+            <Button variant="success" onClick={this.showModal}>
+              <i className="bi bi-zoom-in" />
+            </Button>
+            <h1>{this.displayTitle()}</h1>
+            <Button variant="danger" onClick={this.markSetDone}>
+              <i className="bi bi-x-square" />
+            </Button>
+          </div>
+          <div className="d-flex w-100">
+            {
+              this.props.set.fav &&
+              <div>
+                ⭐
+              </div>
+            }
+            {
+              this.props.set.tags && this.props.set.tags.length > 0 &&
+              <div>
+                {
+                  this.props.set.tags.map(t =>
+                    <span
+                      className="badge bg-secondary mx-1"
+                      key={t}>
+                      {t}
+                    </span>)
+                }
+              </div>
+            }
+            {
+              this.props.set.instrument &&
+              <div className="ms-auto">
+                {this.displayInstrument()}
+              </div>
+            }
           </div>
         </div>
-      </div>
+      </Col>
     );
   }
 }

@@ -21,19 +21,11 @@ export type Tune = {
   notes?: string;
 };
 
-// export type Set = {
-//   done?: boolean;
-//   metre: Metre;
-//   title?: string;
-//   tunes: Tune[];
-//   tags?: string[];
-//   instrument?: Instrument;
-// };
-
 export type SetOptions = {
   tags?: string[];
   title?: string;
   instrument?: Instrument;
+  fav?: boolean;
 }
 
 export class Set {
@@ -44,6 +36,7 @@ export class Set {
   tunes: Tune[];
   tags?: string[];
   instrument?: Instrument;
+  fav?: boolean;
 
   constructor(metre: Metre, tunes: Tune[], options?: SetOptions) {
     this.done = false;
@@ -52,6 +45,7 @@ export class Set {
     this.tags = options?.tags;
     this.title = options?.title ?? tunes.flatMap((t) => t.title).join(" + ");
     this.instrument = options?.instrument;
+    this.fav = options?.fav;
     this.id = this.generateId();
   }
 

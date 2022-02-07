@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import SetCard from './SetCard';
 import SetGroup from './SetGroup';
 import storage from './storage';
-import { Instrument, Metre, Set } from './types';
+import { Metre, Set } from './types';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import './App.css';
-import { JsxElement } from 'typescript';
+import { Button } from 'react-bootstrap';
 
 type AppState = {
   setList: Set[];
@@ -58,12 +58,11 @@ class App extends React.Component<{}, AppState> {
 
     return (
       <div className="App">
-        <button type="button" className="btn btn-secondary" onClick={this.clearCache}>Reset</button>
-        <div>
-          {
-            Array.from(this.groupedSets()).map(([m, s]) => <SetGroup metre={m} sets={s} onDoneChange={this.handleDoneChange} />)
-          }
-        </div>
+        <h1 className="px-4 py-5 text-center">Tunes for Nozzy!</h1>
+        <Button className="p-3 mb-4" variant="success" onClick={this.clearCache}>🎵 Start a new gig 🎵</Button>
+        {
+          Array.from(this.groupedSets()).map(([m, s]) => <SetGroup key={m} metre={m} sets={s} onDoneChange={this.handleDoneChange} />)
+        }
       </div>
     );
   }
