@@ -121,6 +121,10 @@ const storage = {
           { title: "New Fiddle", key: "E", chordsA: ["E", "D"]},
           { title: "Basil the Retriever", key: "Bm" },
         ]),
+        new Set(Metre.Jig, [
+          { title: "Black Sheep", key: "Em", chordsA: ["Am", "D", "Dm7", "E7", "Am", "D", "F", "G"], chordsB: ["Am", "Dm", "D7", "G7", "Am", "D7", "F", "G"]},
+          { title: "The First Pint", key: "D", chordsA: ["D"], chordsB: ["Bm"]},
+        ]),
       ];
     } else {
       console.log("Loading from storage");
