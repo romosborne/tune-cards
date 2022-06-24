@@ -165,6 +165,14 @@ const storage = {
           ],
           { title: "Longford Collector" }
         ),
+        new Set(Metre.Reel, [
+          { title: "The Red Crow", key: "Am" },
+          {
+            title: "Evit Gabriel",
+            key: "Em",
+            chordsB: ["C D", "G", "Am", "B"],
+          },
+        ]),
         new Set(
           Metre.Jig,
           [
