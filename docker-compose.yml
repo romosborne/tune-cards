@@ -1,0 +1,7 @@
+version: "2"
+services:
+  tune-cards:
+    container_name: tune-cards
+    restart: unless-stopped
+    image: tunecards
+    build: .
