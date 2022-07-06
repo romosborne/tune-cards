@@ -1,0 +1,400 @@
+- metre: Square
+  title: On the Danforth
+  tunes:
+    - title: On the Danforth
+      key: A
+- metre: Square
+  title: Redondo + Salt River
+  tunes:
+    - title: Redondo
+      key: G
+      chordsA:
+        - G
+        - ''
+        - C
+        - D
+        - G
+        - ''
+        - ''
+        - Em
+      chordsB:
+        - C
+        - G
+        - ''
+        - CD
+        - C
+        - G
+        - ''
+        - Em(C)
+    - title: Salt River
+      key: A
+      chordsB:
+        - A
+        - G
+- metre: Reel48
+  title: Neckbelly + Echoes
+  tunes:
+    - title: Neckbelly
+      key: F
+      chordsA:
+        - F
+        - Gm
+      chordsB:
+        - Dm
+        - Bb
+        - F
+      chordsC:
+        - Bb
+        - C
+        - F
+    - title: Echoes
+      key: F#m
+      chordsA:
+        - F#m
+        - E
+      chordsB:
+        - D
+        - E
+      chordsC:
+        - A
+- metre: Jig48
+  title: Mattie & Karines + Ship in Full Sail
+  tunes:
+    - title: Mattie & Karines
+      key: G
+      chordsA:
+        - G
+        - ''
+        - C
+        - D
+      chordsB:
+        - C
+        - D
+      chordsC:
+        - G
+        - D/F#
+        - C
+        - D
+    - title: Ship in Full Sail
+      key: A
+- metre: Reel
+  title: Golden Stud + Carries
+  tunes:
+    - title: Golden Stud
+      key: Em
+      chordsB:
+        - C
+        - G
+        - Am
+        - '-'
+        - C
+        - G
+        - B
+        - '-'
+    - title: Carries
+      key: A
+      chordsB:
+        - D
+        - EA
+        - F#m
+        - E
+- metre: Reel
+  title: Riff City + Folklife Reel
+  tunes:
+    - title: Riff City
+      key: Gm
+      chordsB:
+        - Gm
+        - F
+        - Gm
+      notes: Remember double/triples
+    - title: Folklife Reel
+      key: Am
+      chordsA:
+        - Am
+        - C
+        - B
+        - E
+  tags:
+    - dark
+    - driving
+- metre: Reel
+  title: Road to Rio + Ozzy No 1
+  tunes:
+    - title: Road to Rio
+      key: G
+    - title: Ozzy No 1
+      key: Dm
+      chordsA:
+        - Dm
+        - Gm
+- metre: Reel
+  title: Randy Miller's + Black Pearl
+  tunes:
+    - title: Randy Miller's
+      key: Am
+    - title: Black Pearl
+      key: Bm
+      chordsA:
+        - Bm
+        - A
+      chordsB:
+        - D
+- metre: Reel
+  title: Reconciliation + Shirlies
+  tunes:
+    - title: Reconciliation
+      key: A
+    - title: Shirlies
+      key: A
+- metre: Reel
+  title: Elzic's + Renewed Contract
+  tunes:
+    - title: Elzic's
+      key: Am
+      chordsB:
+        - Am
+        - C
+        - D
+    - title: Renewed Contract
+      key: A
+      chordsB:
+        - F#m
+        - D
+        - A
+        - E
+- metre: Reel
+  title: Laura's + Emma's
+  tunes:
+    - title: Laura's
+      key: F
+    - title: Emma's
+      key: Em
+      chordsB:
+        - Em
+        - C
+        - D
+        - ''
+- metre: Reel
+  title: Castlevania + Waves of Rush
+  tunes:
+    - title: Castlevania
+      key: Gm
+    - title: Waves of Rush
+      key: Dm
+  fav: true
+- metre: Reel
+  title: McKenzinator + Smelling Fresh
+  tunes:
+    - title: McKenzinator
+      key: A
+    - title: Smelling Fresh
+      key: D
+- metre: Reel
+  title: Cumberland Gap + Dancing Bear
+  tunes:
+    - title: Cumberland Gap
+      key: Am
+    - title: Dancing Bear
+      key: Em
+      notes: Children
+- metre: Reel
+  title: Scollay's + Weir at Littlebeck
+  tunes:
+    - title: Scollay's
+      key: Em
+      chordsA:
+        - Em
+        - ''
+        - ''
+        - D
+        - Em
+        - ''
+        - B
+        - Em
+      chordsB:
+        - C
+        - ''
+        - Am
+        - D
+        - Em
+        - GC
+        - B
+        - Em
+    - title: Weir at Littlebeck
+      key: F#m
+      chordsA:
+        - F#m
+        - G#m
+        - A
+        - B/A
+      chordsB:
+        - D
+        - C#m
+        - F#5
+        - E
+        - D
+        - C#m
+        - F#
+        - AB
+  tags:
+    - tiring
+  instrument: Flute
+- metre: Reel
+  title: Long Drop
+  tunes:
+    - title: The Long Drop
+      key: G
+    - title: Hamsters in the Kitchen
+      key: D
+      chordsB:
+        - D
+        - F#m
+        - G
+- metre: Reel
+  title: Longford Collector
+  tunes:
+    - title: The Longford Collector
+      key: G
+    - title: That's Right Too
+      key: D
+      chordsB:
+        - D
+        - F#m
+        - G
+      notes: Mind the gap!
+- metre: Reel
+  title: The Red Crow + Evit Gabriel
+  tunes:
+    - title: The Red Crow
+      key: Am
+    - title: Evit Gabriel
+      key: Em
+      chordsB:
+        - C D
+        - G
+        - Am
+        - B
+- metre: Jig
+  title: Turn to Stone
+  tunes:
+    - title: Gallagher's Frolics
+      key: Em
+    - title: Rory Gallagher
+      key: A
+      chordsA:
+        - A
+        - B
+        - D
+        - E
+  tags:
+    - syncopated
+  instrument: Flute
+  fav: true
+- metre: Jig
+  title: Basil + AJ's
+  tunes:
+    - title: Basil
+      key: Bm
+    - title: AJ's
+      key: E
+      chordsB:
+        - F#m
+        - E/G#
+        - C#m
+        - Bm
+        - A
+        - C#m
+        - D
+        - B
+- metre: Jig
+  title: Calling Wood + Mrs O'Sullivans
+  tunes:
+    - title: Calling Wood
+      key: F
+      chordsA:
+        - F
+        - Bb
+        - F
+        - ''
+        - F
+        - Dm
+        - C
+        - ''
+      chordsB:
+        - Dm
+        - C
+        - Bb
+        - ''
+        - Gm
+        - F
+        - C
+        - ''
+    - title: Mrs O'Sullivans
+      key: Dm
+      chordsA:
+        - C
+        - F
+        - G
+        - ''
+        - Am
+        - G
+        - F
+  tags:
+    - smooth
+    - relaxing
+- metre: Jig
+  title: The Rolling Waves
+  tunes:
+    - title: Rolling Waves
+      key: D
+    - title: Gap of Dreams
+      key: Bm
+    - title: Rolling Wave
+      key: D
+  tags:
+    - smooth
+    - relaxing
+- metre: Jig
+  title: Kaspar en stijn + Serenity Hall
+  tunes:
+    - title: Kaspar en stijn
+      key: G
+      chordsA:
+        - G
+        - Am/G
+      chordsB:
+        - Em
+        - Bm/D
+        - C
+    - title: Serenity Hall
+      key: Dm
+  tags:
+    - bouncy a
+    - bouncy b
+- metre: Jig
+  title: New Fiddle + Basil the Retriever
+  tunes:
+    - title: New Fiddle
+      key: E
+      chordsA:
+        - E
+        - D
+    - title: Basil the Retriever
+      key: Bm
+- metre: Jig
+  title: Cleveland Park + The First Pint
+  tunes:
+    - title: Cleveland Park
+      key: Dm
+      chordsA:
+        - Dm
+        - Bb
+        - G
+        - C
+    - title: The First Pint
+      key: D
+      chordsA:
+        - D
+      chordsB:
+        - Bm
