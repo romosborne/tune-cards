@@ -1,10 +1,16 @@
 - metre: Square
-  title: On the Danforth
   tunes:
     - title: On the Danforth
       key: A
 - metre: Square
-  title: Redondo + Salt River
+  tunes:
+    - title: Lake Erie
+      key: D
+    - title: Going to the Free State
+      key: A
+    - title: Cotton Eye Joe
+      key: A
+- metre: Square
   tunes:
     - title: Redondo
       key: G
@@ -32,7 +38,6 @@
         - A
         - G
 - metre: Reel48
-  title: Neckbelly + Echoes
   tunes:
     - title: Neckbelly
       key: F
@@ -58,7 +63,6 @@
       chordsC:
         - A
 - metre: Jig48
-  title: Mattie & Karines + Ship in Full Sail
   tunes:
     - title: Mattie & Karines
       key: G
@@ -78,7 +82,6 @@
     - title: Ship in Full Sail
       key: A
 - metre: Reel
-  title: Golden Stud + Carries
   tunes:
     - title: Golden Stud
       key: Em
@@ -99,7 +102,6 @@
         - F#m
         - E
 - metre: Reel
-  title: Riff City + Folklife Reel
   tunes:
     - title: Riff City
       key: Gm
@@ -119,7 +121,6 @@
     - dark
     - driving
 - metre: Reel
-  title: Road to Rio + Ozzy No 1
   tunes:
     - title: Road to Rio
       key: G
@@ -129,7 +130,6 @@
         - Dm
         - Gm
 - metre: Reel
-  title: Randy Miller's + Black Pearl
   tunes:
     - title: Randy Miller's
       key: Am
@@ -141,14 +141,12 @@
       chordsB:
         - D
 - metre: Reel
-  title: Reconciliation + Shirlies
   tunes:
     - title: Reconciliation
       key: A
     - title: Shirlies
       key: A
 - metre: Reel
-  title: Elzic's + Renewed Contract
   tunes:
     - title: Elzic's
       key: Am
@@ -164,7 +162,6 @@
         - A
         - E
 - metre: Reel
-  title: Laura's + Emma's
   tunes:
     - title: Laura's
       key: F
@@ -176,7 +173,6 @@
         - D
         - ''
 - metre: Reel
-  title: Castlevania + Waves of Rush
   tunes:
     - title: Castlevania
       key: Gm
@@ -184,14 +180,12 @@
       key: Dm
   fav: true
 - metre: Reel
-  title: McKenzinator + Smelling Fresh
   tunes:
     - title: McKenzinator
       key: A
     - title: Smelling Fresh
       key: D
 - metre: Reel
-  title: Cumberland Gap + Dancing Bear
   tunes:
     - title: Cumberland Gap
       key: Am
@@ -199,7 +193,6 @@
       key: Em
       notes: Children
 - metre: Reel
-  title: Scollay's + Weir at Littlebeck
   tunes:
     - title: Scollay's
       key: Em
@@ -264,7 +257,6 @@
         - G
       notes: Mind the gap!
 - metre: Reel
-  title: The Red Crow + Evit Gabriel
   tunes:
     - title: The Red Crow
       key: Am
@@ -275,6 +267,13 @@
         - G
         - Am
         - B
+- metre: Reel
+  tunes:
+    - title: Trip to Miriam's
+      key: A
+    - title: Maggie's Pancakes
+      key: Bm
+      chordsB: [G, A Bm]
 - metre: Jig
   title: Turn to Stone
   tunes:
@@ -292,7 +291,28 @@
   instrument: Flute
   fav: true
 - metre: Jig
-  title: Basil + AJ's
+  tunes:
+    - title: Bridget's Back in Town
+      key: D
+      chordsB: [C, D]
+    - title: All the Rage
+      key: E
+- metre: Jig
+  tunes:
+    - title: Jig Runrig
+      key: D
+    - title: Boys of the Puddle
+      key: A
+      chordsB: [Bm, C#m, D, E]
+- metre: Jig
+  tunes:
+    - title: The Wild One
+      key: Dm
+      chordsA: [Dm, F, Bb, Am]
+    - title: I'm Going to Speke
+      key: D
+      chordsB: [Bm]
+- metre: Jig
   tunes:
     - title: Basil
       key: Bm
@@ -308,7 +328,6 @@
         - D
         - B
 - metre: Jig
-  title: Calling Wood + Mrs O'Sullivans
   tunes:
     - title: Calling Wood
       key: F
@@ -356,7 +375,6 @@
     - smooth
     - relaxing
 - metre: Jig
-  title: Kaspar en stijn + Serenity Hall
   tunes:
     - title: Kaspar en stijn
       key: G
@@ -373,7 +391,6 @@
     - bouncy a
     - bouncy b
 - metre: Jig
-  title: New Fiddle + Basil the Retriever
   tunes:
     - title: New Fiddle
       key: E
@@ -383,7 +400,6 @@
     - title: Basil the Retriever
       key: Bm
 - metre: Jig
-  title: Cleveland Park + The First Pint
   tunes:
     - title: Cleveland Park
       key: Dm
