@@ -29,9 +29,11 @@ const storage = {
     if (skipCache || local === null) {
       console.log("Loading from 'api'")
 
-      const response = await fetch(
+      const url =
         'https://raw.githubusercontent.com/romosborne/tune-cards/master/public/tunes.yaml'
-      )
+      // const url = '/tunes.yaml'
+
+      const response = await fetch(url)
       const text = await response.text()
 
       const sets = load(text) as Set[]

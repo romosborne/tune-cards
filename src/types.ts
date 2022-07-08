@@ -3,6 +3,7 @@ export enum Metre {
   Reel48 = 'Reel48',
   Jig = 'Jig',
   Jig48 = 'Jig48',
+  SlipJig = 'SlipJig',
   Square = 'Square',
   Waltz = 'Waltz',
 }

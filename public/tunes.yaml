@@ -83,6 +83,25 @@
       key: A
 - metre: Reel
   tunes:
+    - title: Brenda Stubbert's
+      key: Am
+    - title: Franks
+      key: A
+- metre: Reel
+  tunes:
+    - title: Ramnee Ceilidh
+      key: D
+      chordsB: [Bm]
+    - title: The Reel of Sceachog
+      key: A
+- metre: Reel
+  tunes:
+    - title: The Wedding
+      key: D
+    - title: Fleur de Mandragore
+      key: A
+- metre: Reel
+  tunes:
     - title: Golden Stud
       key: Em
       chordsB:
@@ -414,3 +433,12 @@
         - D
       chordsB:
         - Bm
+- metre: SlipJig
+  title: CAD slips
+  tunes:
+    - title: Waterboogie
+      key: F
+    - title: Farewell To Whalley Range
+      key: F#m
+    - title: Soggy's
+      key: A
