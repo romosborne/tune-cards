@@ -2,6 +2,7 @@
   tunes:
     - title: On the Danforth
       key: A
+      hint: c2>d2c2A2|B2c2F4
 - metre: Square
   tunes:
     - title: Lake Erie
@@ -140,6 +141,7 @@
     - dark
     - driving
 - metre: Reel
+  tags: [bouncy B]
   tunes:
     - title: Road to Rio
       key: G

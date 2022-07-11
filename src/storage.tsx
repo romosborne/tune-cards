@@ -8,6 +8,17 @@ const storage = {
       s.title = s.tunes.flatMap((t) => t.title).join(' + ')
     }
 
+    if (s.metre) {
+      s.tunes = s.tunes.map((t) => ({ ...t, metre: s.metre }))
+    } else {
+      const metres = s.tunes.flatMap((t) => t.metre)
+      if (metres.every((m) => m === metres[0])) {
+        s.metre = metres[0]
+      } else {
+        // TODO: Think about mixed metre sets here...
+      }
+    }
+
     if (!s.id) {
       if (s.title) {
         s.id = s.title.replace(/\W/g, '')

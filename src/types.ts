@@ -16,10 +16,12 @@ export enum Instrument {
 export type Tune = {
   title: string
   key: string
+  metre: Metre
   chordsA?: string[]
   chordsB?: string[]
   chordsC?: string[]
   notes?: string
+  hint?: string
 }
 
 export type Set = {
