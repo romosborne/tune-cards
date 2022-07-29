@@ -84,6 +84,18 @@
       key: A
 - metre: Reel
   tunes:
+    - title: Bad Apple
+      key: Dm
+    - title: Touching Cloth
+      key: E
+- metre: Reel
+  tunes:
+    - title: Devil's Churn
+      key: Dm
+    - title: Phone Call
+      key: Gm
+- metre: Reel
+  tunes:
     - title: Brenda Stubbert's
       key: Am
     - title: Franks
@@ -435,6 +447,13 @@
         - D
       chordsB:
         - Bm
+- metre: Jig
+  tunes:
+    - title: Old Woman Tossed
+      key: A
+      notes: Jigs to reels!
+    - title: Wrong Ant Rant
+      key: Bm
 - metre: SlipJig
   title: CAD slips
   tunes:
