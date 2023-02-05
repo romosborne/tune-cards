@@ -470,3 +470,16 @@
       key: F#m
     - title: Soggy's
       key: A
+- metre: Waltz
+  tunes:
+    - title: Madoka
+      key: Gm
+      chordsA: [Gm, -, Eb, F]
+      chordsB: [Eb, F, Gm, -, Eb, F, Bb, -]
+- metre: Waltz
+  tunes:
+    - title: Dragon Roost Island
+      key: Gm
+      chordsA: [Gm, F/G]
+      chordsB: [Bb, Ab, Gm, F, Eb]
+      chordsC: [Eb, Dm7, Eb, F, Eb, Dm7, C7, -]
