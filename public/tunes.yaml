@@ -91,10 +91,10 @@
       key: A
 - metre: Reel
   tunes:
-    - title: Bad Apple
-      key: Dm
     - title: Touching Cloth
       key: E
+    - title: Trondheim
+      key: A
 - metre: Reel
   tunes:
     - title: Devil's Churn
@@ -227,11 +227,9 @@
       key: D
 - metre: Reel
   tunes:
-    - title: Cumberland Gap
-      key: Am
     - title: Dancing Bear
       key: Em
-      notes: Children
+      notes: Children (C, Am, Em), What is love? (Em, G, Bm, D), Black Betty (C, Am, Em, G)
 - metre: Reel
   tunes:
     - title: Scollay's
