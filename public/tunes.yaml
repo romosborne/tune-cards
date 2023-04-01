@@ -312,6 +312,26 @@
     - title: Maggie's Pancakes
       key: Bm
       chordsB: [G, A Bm]
+- metre: Reel
+  tunes:
+    - title: Farewell to Chernobyl
+      key: Dm
+      chordsA:
+        - Dm
+        - Am
+        - Gm
+        - C
+      chordsB:
+        - Dm
+        - Bb C
+        - Gm
+        - Bb C
+        - Dm
+        - Bb C
+        - Dm Bb
+        - C Gm
+    - title: John Stensons no. 2
+      key: A
 - metre: Jig
   title: Turn to Stone
   tunes:
