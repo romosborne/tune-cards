@@ -187,6 +187,8 @@
     - title: Shirlies
       key: A
 - metre: Reel
+  tags:
+    - bouncy b1
   tunes:
     - title: Elzic's
       key: Am
@@ -296,17 +298,6 @@
       notes: Mind the gap!
 - metre: Reel
   tunes:
-    - title: The Red Crow
-      key: Am
-    - title: Evit Gabriel
-      key: Em
-      chordsB:
-        - C D
-        - G
-        - Am
-        - B
-- metre: Reel
-  tunes:
     - title: Trip to Miriam's
       key: A
     - title: Maggie's Pancakes
@@ -354,6 +345,7 @@
   tunes:
     - title: Basil
       key: Bm
+      chordsA: [Bm, G, A]
     - title: AJ's
       key: E
       chordsB:
@@ -428,15 +420,6 @@
   tags:
     - bouncy a
     - bouncy b
-- metre: Jig
-  tunes:
-    - title: New Fiddle
-      key: E
-      chordsA:
-        - E
-        - D
-    - title: Basil the Retriever
-      key: Bm
 - metre: Jig
   tunes:
     - title: Cleveland Park
