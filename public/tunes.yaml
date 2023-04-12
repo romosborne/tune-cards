@@ -570,7 +570,7 @@
   tunes:
     - title: Song of Storms
       key: Dm
-      chordsA: [Dm, Em, F (aug), Em, Bb, F, Bb, A]
+      chordsA: [Dm, Em, F, Em, Bb, F, Bb, A]
       chordsB: [Dm, Em, F, Em, Bb, A, Dm, '-']
 - metre: Waltz
   tunes:
