@@ -45,6 +45,12 @@
       chordsB:
         - A
         - G
+- metre: Square
+  tunes:
+    - title: Down in the Swamp
+      key: E modal
+      chordsA: [E, D, A/C#]
+      chordsB: [D, A/C#, E, (B)]
 - metre: Reel48
   tunes:
     - title: Neckbelly
@@ -303,6 +309,39 @@
     - title: Maggie's Pancakes
       key: Bm
       chordsB: [G, A Bm]
+- metre: Reel
+  tunes:
+    - title: Flight of the Penguins
+      key: F#m
+    - title: Superfly
+      key: Bm
+      chordsB: [Bm, G]
+      hint: BffB gfeg | f2fg fedf
+- metre: Reel
+  tunes:
+    - title: Cooleys
+      key: Em
+    - title: John Stensons
+      key: A
+- metre: Reel
+  tunes:
+    - title: Your Hair's On Fire
+      key: Bm
+      chordsA: [Bm, G]
+    - title: Nyan Cat
+      key: B
+- metre: Reel
+  tunes:
+    - title: Road to Errogie
+      key: A
+    - title: MacArthur Road
+      key: E
+- metre: Reel
+  tunes:
+    - title: Iggy & Squidgy
+      key: D
+    - title: Maine Freeway
+      key: A
 - metre: Jig
   title: Turn to Stone
   tunes:
@@ -437,6 +476,12 @@
         - Bm
 - metre: Jig
   tunes:
+    - title: Coffee
+      key: Em
+    - title: Recession
+      key: A
+- metre: Jig
+  tunes:
     - title: Old Woman Tossed
       key: A
       notes: Jigs to reels!
@@ -490,4 +535,34 @@
         - Eb
         - Dm7
         - C7
+        - '-'
+- metre: Waltz
+  tunes:
+    - title: My Castle Town
+      key: Cm
+      chordsA:
+        - Cm
+        - Fm
+        - Bb
+        - Eb
+        - Fm
+        - Gm
+        - Ab
+        - G
+      chordsC:
+        - Cm
+        - '-'
+        - Gm/Bb
+        - Bb
+        - Fm
+        - Bb
+        - Eb7
+        - Edim
+        - Fm
+        - Bb
+        - Eb
+        - Cm
+        - F#dim
+        - Adim
+        - G
         - '-'
