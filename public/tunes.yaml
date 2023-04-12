@@ -566,3 +566,43 @@
         - Adim
         - G
         - '-'
+- metre: Waltz
+  tunes:
+    - title: Primrose
+      key: Dm
+      notes: 'Intro: A music'
+      chordsA:
+        - Dm
+        - Am
+        - Bb
+        - F
+        - Gm
+        - C
+        - F
+        - A
+        - Dm
+        - Am
+        - Bb
+        - F
+        - Gm
+        - Am
+        - Bb C
+        - Dm
+      chordsB:
+        - Gm
+        - F
+        - Eb
+        - Bb
+        - Cm
+        - Gm
+        - A
+        - D
+        - Gm
+        - F
+        - Eb
+        - Bb
+        - Cm
+        - Gm
+        - Edim
+        - ''
+        - A
