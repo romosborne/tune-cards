@@ -1,0 +1,173 @@
+- metre: Jig
+  title: Turn to Stone
+  tunes:
+    - title: Gallagher's Frolics
+      key: Em
+    - title: Rory Gallagher
+      key: A
+      chordsA:
+        - A
+        - B
+        - D
+        - E
+  tags:
+    - syncopated
+  instrument: Flute
+  fav: true
+- metre: Jig
+  tunes:
+    - title: Bridget's Back in Town
+      key: D
+      chordsB: [C, D]
+    - title: All the Rage
+      key: E
+- metre: Jig
+  tunes:
+    - title: Jig Runrig
+      key: D
+    - title: Boys of the Puddle
+      key: A
+      chordsB: [Bm, C#m, D, E]
+- metre: Jig
+  tunes:
+    - title: The Wild One
+      key: Dm
+      chordsA: [Dm, F, Bb, Am]
+    - title: I'm Going to Speke
+      key: D
+      chordsB: [Bm]
+- metre: Jig
+  tunes:
+    - title: Basil
+      key: Bm
+      chordsA: [Bm, G, A]
+    - title: AJ's
+      key: E
+      chordsB:
+        - F#m
+        - E/G#
+        - C#m
+        - Bm
+        - A
+        - C#m
+        - D
+        - B
+- metre: Jig
+  tunes:
+    - title: Calling Wood
+      key: F
+      chordsA:
+        - F
+        - Bb
+        - F
+        - ''
+        - F
+        - Dm
+        - C
+        - ''
+      chordsB:
+        - Dm
+        - C
+        - Bb
+        - ''
+        - Gm
+        - F
+        - C
+        - ''
+    - title: Mrs O'Sullivans
+      key: Dm
+      chordsA:
+        - C
+        - F
+        - G
+        - ''
+        - Am
+        - G
+        - F
+  tags:
+    - smooth
+    - relaxing
+- metre: Jig
+  title: The Rolling Waves
+  tunes:
+    - title: Rolling Waves
+      key: D
+    - title: Gap of Dreams
+      key: Bm
+    - title: Rolling Wave
+      key: D
+  tags:
+    - smooth
+    - relaxing
+- metre: Jig
+  tunes:
+    - title: Kaspar en stijn
+      key: G
+      chordsA:
+        - G
+        - Am/G
+      chordsB:
+        - Em
+        - Bm/D
+        - C
+    - title: Serenity Hall
+      key: Dm
+  tags:
+    - bouncy a
+    - bouncy b
+- metre: Jig
+  tunes:
+    - title: Cleveland Park
+      key: Dm
+      chordsA:
+        - Dm
+        - Bb
+        - G
+        - C
+    - title: The First Pint
+      key: D
+      chordsA:
+        - D
+      chordsB:
+        - Bm
+- metre: Jig
+  tunes:
+    - title: Coffee
+      key: Em
+    - title: Recession
+      key: A
+- metre: Jig
+  tunes:
+    - title: Old Woman Tossed
+      key: A
+      notes: Jigs to reels!
+    - title: Wrong Ant Rant
+      key: Bm
+- metre: SlipJig
+  title: CAD slips
+  tunes:
+    - title: Waterboogie
+      key: F
+    - title: Farewell To Whalley Range
+      key: F#m
+    - title: Soggy's
+      key: A
+- metre: Jig48
+  tunes:
+    - title: Mattie & Karines
+      key: G
+      chordsA:
+        - G
+        - ''
+        - C
+        - D
+      chordsB:
+        - C
+        - D
+      chordsC:
+        - G
+        - D/F#
+        - C
+        - D
+    - title: Ship in Full Sail
+      key: A

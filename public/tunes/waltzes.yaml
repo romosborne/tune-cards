@@ -1,0 +1,116 @@
+- metre: Waltz
+  tunes:
+    - title: Madoka
+      key: Gm
+      chordsA:
+        - Gm
+        - ''
+        - Eb
+        - F
+      chordsB:
+        - Eb
+        - F
+        - Gm
+        - ''
+        - Eb
+        - F
+        - Bb
+        - ''
+- metre: Waltz
+  tunes:
+    - title: Dragon Roost Island
+      key: Gm
+      chordsA:
+        - Gm
+        - F/G
+      chordsB:
+        - Bb
+        - Ab
+        - Gm
+        - F
+        - Eb
+      chordsC:
+        - Eb
+        - Dm7
+        - Eb
+        - F
+        - Eb
+        - Dm7
+        - C7
+        - '-'
+- metre: Waltz
+  tunes:
+    - title: My Castle Town
+      key: Cm
+      chordsA:
+        - Cm
+        - Fm
+        - Bb
+        - Eb
+        - Fm
+        - Gm
+        - Ab
+        - G
+      chordsC:
+        - Cm
+        - '-'
+        - Gm/Bb
+        - Bb
+        - Fm
+        - Bb
+        - Eb7
+        - Edim
+        - Fm
+        - Bb
+        - Eb
+        - Cm
+        - F#dim
+        - Adim
+        - G
+        - '-'
+- metre: Waltz
+  tunes:
+    - title: Song of Storms
+      key: Dm
+      chordsA: [Dm, Em, F, Em, Bb, F, Bb, A]
+      chordsB: [Dm, Em, F, Em, Bb, A, Dm, '-']
+- metre: Waltz
+  tunes:
+    - title: Primrose
+      key: Dm
+      notes: 'Intro: A music'
+      chordsA:
+        - Dm
+        - Am
+        - Bb
+        - F
+        - Gm
+        - C
+        - F
+        - A
+        - Dm
+        - Am
+        - Bb
+        - F
+        - Gm
+        - Am
+        - Bb C
+        - Dm
+      chordsB:
+        - Gm
+        - F
+        - Eb
+        - Bb
+        - Cm
+        - Gm
+        - A
+        - D
+        - Gm
+        - F
+        - Eb
+        - Bb
+        - Cm
+        - Gm
+        - Edim
+        - ''
+        - A

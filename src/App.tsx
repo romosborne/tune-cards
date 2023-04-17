@@ -4,17 +4,19 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import storage from './utils/storage'
 import { Metre, Set } from './types'
 import SetGroup from './components/SetGroup'
-import { Container, Navbar } from 'react-bootstrap'
+import { Container, Navbar, Spinner } from 'react-bootstrap'
 import Sidebar from './components/Sidebar'
 
 const App = () => {
   const [sets, setSets] = useState<Set[]>([])
   const [completedSets, setCompletedSets] = useState<Set[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const loadData = async () => {
       const sets = await storage.loadSets()
       setSets(sets)
+      setLoading(false)
     }
 
     loadData().catch(console.error)
@@ -84,14 +86,16 @@ const App = () => {
       </Navbar>
 
       <div className="App">
-        {Array.from(groupedSets()).map(([m, s]) => (
-          <SetGroup
-            key={m}
-            metre={m}
-            sets={s}
-            onDoneChange={handleDoneChange}
-          />
-        ))}
+        {loading && <Spinner />}
+        {!loading &&
+          Array.from(groupedSets()).map(([m, s]) => (
+            <SetGroup
+              key={m}
+              metre={m}
+              sets={s}
+              onDoneChange={handleDoneChange}
+            />
+          ))}
       </div>
     </>
   )

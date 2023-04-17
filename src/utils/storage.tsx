@@ -38,20 +38,25 @@ const storage = {
     let local = localStorage.getItem(this.STORAGE_KEY)
 
     if (skipCache || local === null) {
-      console.log("Loading from 'api'")
+      console.log('Loading from github')
 
-      const url =
-        'https://raw.githubusercontent.com/romosborne/tune-cards/master/public/tunes.yaml'
-      // const url = '/tunes.yaml'
+      const files = ['reels', 'jigs', 'squares', 'waltzes']
 
-      const response = await fetch(url)
-      const text = await response.text()
+      const downloadFile = async (file: string) => {
+        const url = `https://raw.githubusercontent.com/romosborne/tune-cards/master/public/tunes/${file}.yaml`
+        const response = await fetch(url)
+        const text = await response.text()
 
-      const sets = load(text) as Set[]
+        const sets = load(text) as Set[]
+        const hydratedSets = sets.map((s) => this.inflate(s))
 
-      const inflatedSets = sets.map((s) => this.inflate(s))
+        return hydratedSets
+      }
 
-      return inflatedSets
+      const setCollections = await Promise.all(
+        files.map((f) => downloadFile(f))
+      )
+      return setCollections.flat()
     } else {
       console.log('Loading from storage')
       const sets = JSON.parse(local)

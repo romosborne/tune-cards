@@ -1,0 +1,53 @@
+- metre: Square
+  tunes:
+    - title: On the Danforth
+      key: A
+      hint: c2>d2c2A2|B2c2F4
+- metre: Square
+  tunes:
+    - title: Lake Erie
+      key: D
+    - title: Going to the Free State
+      key: A
+    - title: Cotton Eye Joe
+      key: A
+- metre: Square
+  tunes:
+    - title: Athletic Theme
+      key: F
+      chordsA: [F, D, Gm, C7]
+      chordsB: [D, Gm, C, F]
+      hint: ^G2A2c2d2 | f2f4 a2 | b2a2^f2d2 | c6
+- metre: Square
+  tunes:
+    - title: Redondo
+      key: G
+      chordsA:
+        - G
+        - ''
+        - C
+        - D
+        - G
+        - ''
+        - ''
+        - Em
+      chordsB:
+        - C
+        - G
+        - ''
+        - CD
+        - C
+        - G
+        - ''
+        - Em(C)
+    - title: Salt River
+      key: A
+      chordsB:
+        - A
+        - G
+- metre: Square
+  tunes:
+    - title: Down in the Swamp
+      key: E modal
+      chordsA: [E, D, A/C#]
+      chordsB: [D, A/C#, E, (B)]
