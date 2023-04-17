@@ -221,12 +221,12 @@
       chordsB: [Bm, G]
       hint: BffB gfeg | f2fg fedf
 - metre: Reel
-  notes: Add a bit of a speed boost in the change
   tunes:
     - title: Cooleys
       key: Em
     - title: John Stensons
       key: A
+      notes: Add a bit of a speed boost in the change
 - metre: Reel
   tunes:
     - title: Your Hair's On Fire

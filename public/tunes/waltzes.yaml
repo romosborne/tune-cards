@@ -43,10 +43,10 @@
     - title: My Castle Town
       key: Cm
       chordsA:
-        - Cm
+        - '|:Cm'
         - Fm
         - Bb
-        - Eb
+        - 'Eb:|x3'
         - Fm
         - Gm
         - Ab
