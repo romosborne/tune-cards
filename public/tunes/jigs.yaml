@@ -75,7 +75,7 @@
         - C
         - ''
     - title: Mrs O'Sullivans
-      key: Dm
+      key: C
       chordsA:
         - C
         - F
@@ -133,9 +133,11 @@
 - metre: Jig
   tunes:
     - title: Coffee
-      key: Em
+      key: Am
     - title: Recession
-      key: A
+      key: Bm
+      chordsB: [F#m, D, B, (G)]
+
 - metre: Jig
   tunes:
     - title: Old Woman Tossed
