@@ -1,4 +1,4 @@
-import { Set } from './types'
+import { Set } from '../types'
 import { load } from 'js-yaml'
 
 const storage = {

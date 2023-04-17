@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import SetCard from './SetCard'
-import { Metre, Set } from './types'
+import { Metre, Set } from '../types'
 import './SetGroup.css'
 
 type SetGroupProps = {

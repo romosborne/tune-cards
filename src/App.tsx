@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
-import SetGroup from './SetGroup'
-import storage from './storage'
-import { Metre, Set } from './types'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 import './App.css'
-import { Button } from 'react-bootstrap'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import storage from './utils/storage'
+import { Metre, Set } from './types'
+import SetGroup from './components/SetGroup'
+import { Container, Navbar } from 'react-bootstrap'
+import Sidebar from './components/Sidebar'
 
 const App = () => {
   const [sets, setSets] = useState<Set[]>([])
+  const [completedSets, setCompletedSets] = useState<Set[]>([])
+
   useEffect(() => {
     const loadData = async () => {
       const sets = await storage.loadSets()
@@ -18,11 +21,17 @@ const App = () => {
   }, [])
 
   const clearCache = async () => {
+    console.log('Clearing cache')
     const sets = await storage.loadSets(true)
     setSets(sets)
+    setCompletedSets([])
   }
 
   const handleDoneChange = (setId: string, value: boolean) => {
+    const set = sets.find((s) => s.id === setId)
+
+    if (set) setCompletedSets((cs) => [...cs, set])
+
     const newSets = sets.map((s) => {
       if (s.id === setId) s.done = value
       return s
@@ -44,16 +53,47 @@ const App = () => {
     return map
   }
 
+  const addInterval = () => {
+    console.log('adding interval')
+    setCompletedSets((cs) => [
+      ...cs,
+      {
+        id: 'interval',
+        done: true,
+        title: 'Interval',
+        metre: Metre.Reel,
+        tunes: [],
+      },
+    ])
+  }
+
   return (
-    <div className="App">
-      <h1 className="px-4 py-5 text-center">Tunes for Nozzy!</h1>
-      <Button className="p-3 mb-4" variant="success" onClick={clearCache}>
-        🎵 Start a new gig 🎵
-      </Button>
-      {Array.from(groupedSets()).map(([m, s]) => (
-        <SetGroup key={m} metre={m} sets={s} onDoneChange={handleDoneChange} />
-      ))}
-    </div>
+    <>
+      <Navbar expand={false}>
+        <Container>
+          <Navbar.Toggle />
+          <Navbar.Brand>Tunes for Nozzy!</Navbar.Brand>
+          <Navbar.Offcanvas>
+            <Sidebar
+              completedSets={completedSets}
+              newGig={clearCache}
+              interval={addInterval}
+            />
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
+
+      <div className="App">
+        {Array.from(groupedSets()).map(([m, s]) => (
+          <SetGroup
+            key={m}
+            metre={m}
+            sets={s}
+            onDoneChange={handleDoneChange}
+          />
+        ))}
+      </div>
+    </>
   )
 }
 

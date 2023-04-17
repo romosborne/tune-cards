@@ -1,6 +1,6 @@
 import React from 'react'
 import TuneSummary from './TuneSummary'
-import { Set } from './types'
+import { Set } from '../types'
 import Modal from 'react-bootstrap/Modal'
 
 type SetModalProps = {

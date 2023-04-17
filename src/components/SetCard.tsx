@@ -1,6 +1,6 @@
 import React from 'react'
 import SetModal from './SetModal'
-import { Instrument, Set } from './types'
+import { Instrument, Set } from '../types'
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 

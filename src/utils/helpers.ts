@@ -1,4 +1,4 @@
-import { Metre, Tune } from './types'
+import { Metre, Tune } from '../types'
 
 const metres: Record<Metre, string> = {
   [Metre.Reel]: '4/4',

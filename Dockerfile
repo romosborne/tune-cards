@@ -1,17 +1,16 @@
-FROM node:13.12.0-alpine as build
+FROM node:18 as build
+
 WORKDIR /app
-ENV PATH /app/node_modules/.bin:$PATH
 
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install --silent
-RUN npm install react-scripts@3.4.1 -g --silent
+COPY package.json yarn.lock ./
+RUN yarn
 
-COPY . ./
+ADD . .
 
-RUN npm run build
+RUN yarn build
 
-FROM nginx:stable-alpine
-COPY --from=build /app/build /usr/share/nginx/html
+FROM nginx:latest
+
+COPY --from=build /app/dist /usr/share/nginx/html/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

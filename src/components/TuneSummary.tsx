@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import { Accordion, Badge, Col, Row } from 'react-bootstrap'
 import Chords from './Chords'
-import { Tune } from './types'
+import { Tune } from '../types'
 import abcjs from 'abcjs'
-import { expandAbc } from './helpers'
+import { expandAbc } from '../utils/helpers'
 
 type TuneSummaryProps = {
   tune: Tune
