@@ -10,6 +10,7 @@
       key: Dm
     - title: Phone Call
       key: Gm
+      notes: Sudden end
 - metre: Reel
   tunes:
     - title: Brenda Stubbert's
@@ -246,6 +247,14 @@
       key: D
     - title: Maine Freeway
       key: A
+- metre: Reel
+  tunes:
+    - title: Bus Stop Reel
+      key: Am
+      notes: Stay on Bus Stop Reel longer than you think
+    - title: Farewell to Chernobyl
+      key: Dm
+      chordsA: [Dm, Am, Gm]
 - metre: Reel48
   tunes:
     - title: Neckbelly
