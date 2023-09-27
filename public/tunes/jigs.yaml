@@ -150,10 +150,12 @@
   tunes:
     - title: Malarky
       key: Bm
+      notes: Not too fast
     - title: Breakish Stormsheep
       key: A
 
 - metre: Jig
+  tags: ['laid back']
   tunes:
     - title: Hold up the Sky
       key: Bm
