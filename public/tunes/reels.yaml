@@ -261,6 +261,7 @@
       key: D
     - title: Bang Your Frog on the Sofa
       key: Dm
+      chordsB: [Bb, C, Dm, '']
 - metre: Reel48
   tunes:
     - title: Neckbelly

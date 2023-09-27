@@ -157,6 +157,7 @@
   tunes:
     - title: Hold up the Sky
       key: Bm
+      chordsB: [G, Em, Bm, '']
     - title: Mystery Inch
       key: F#m
       chordsA: [F#m, D, A, E (C#m)]
