@@ -255,6 +255,12 @@
     - title: Farewell to Chernobyl
       key: Dm
       chordsA: [Dm, Am, Gm]
+- metre: Reel
+  tunes:
+    - title: Gigue De Terrebonne
+      key: D
+    - title: Bang Your Frog on the Sofa
+      key: Dm
 - metre: Reel48
   tunes:
     - title: Neckbelly
