@@ -26,7 +26,6 @@ export type Tune = {
 
 export type Set = {
   id: string
-  done: boolean
   metre: Metre
   title: string
   tunes: Tune[]

@@ -41,15 +41,13 @@ class SetGroup extends React.Component<SetGroupProps> {
         </h1>
         <Container>
           <Row xs={1} lg={2} xxl={3}>
-            {this.props.sets
-              .filter((s) => !!!s.done)
-              .map((s) => (
-                <SetCard
-                  key={s.id}
-                  set={s}
-                  onDoneChange={this.props.onDoneChange}
-                />
-              ))}
+            {this.props.sets.map((s) => (
+              <SetCard
+                key={s.id}
+                set={s}
+                onDoneChange={this.props.onDoneChange}
+              />
+            ))}
           </Row>
         </Container>
       </div>

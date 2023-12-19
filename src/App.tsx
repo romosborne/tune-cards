@@ -1,20 +1,30 @@
+/* eslint-disable no-console */
 import { useEffect, useState } from 'react'
 import './App.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import storage from './utils/storage'
 import { Metre, Set } from './types'
 import SetGroup from './components/SetGroup'
 import { Container, Navbar, Spinner } from 'react-bootstrap'
 import Sidebar from './components/Sidebar'
+import { loadSets } from './utils/storage'
+import { useStickyState } from './utils/hooks'
+import { groupBy } from './utils/helpers'
 
 const App = () => {
   const [sets, setSets] = useState<Set[]>([])
-  const [completedSets, setCompletedSets] = useState<Set[]>([])
+  const [completedSets, setCompletedSets] = useStickyState<Set[]>(
+    [],
+    'CompletedSets',
+  )
+  const [groupedPendingSets, setGroupedPendingSets] = useState<Record<
+    Metre,
+    Set[]
+  > | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const loadData = async () => {
-      const sets = await storage.loadSets()
+      const sets = await loadSets()
       setSets(sets)
       setLoading(false)
     }
@@ -23,50 +33,37 @@ const App = () => {
   }, [])
 
   const clearCache = async () => {
-    console.log('Clearing cache')
-    const sets = await storage.loadSets(true)
+    const sets = await loadSets(true)
     setSets(sets)
     setCompletedSets([])
   }
 
-  const handleDoneChange = (setId: string, value: boolean) => {
+  useEffect(() => {
+    const completedSetIds = completedSets.map((s) => s.id)
+    const pendingSets = sets.filter((s) => !completedSetIds.includes(s.id))
+    const groups = groupBy(pendingSets, (s) => s.metre)
+    setGroupedPendingSets(groups)
+  }, [sets, completedSets])
+
+  const handleDoneChange = (setId: string) => {
     const set = sets.find((s) => s.id === setId)
 
     if (set) setCompletedSets((cs) => [...cs, set])
-
-    const newSets = sets.map((s) => {
-      if (s.id === setId) s.done = value
-      return s
-    })
-    setSets(newSets)
-  }
-
-  const groupedSets = () => {
-    var map = new Map<Metre, Set[]>()
-    sets.forEach((s: Set) => {
-      const key = s.metre
-      const collection = map.get(key)
-      if (!collection) {
-        map.set(key, [s])
-      } else {
-        collection.push(s)
-      }
-    })
-    return map
   }
 
   const addInterval = () => {
-    console.log('adding interval')
-    setCompletedSets((cs) => [
-      ...cs,
-      {
-        id: 'interval',
-        done: true,
-        title: 'Interval',
-        metre: Metre.Reel,
-        tunes: [],
-      },
-    ])
+    setCompletedSets((cs) => {
+      const count = cs.filter((s) => s.title === 'Interval').length
+      return [
+        ...cs,
+        {
+          id: `interval${count + 1}`,
+          title: 'Interval',
+          metre: Metre.Reel,
+          tunes: [],
+        },
+      ]
+    })
   }
 
   return (
@@ -88,10 +85,11 @@ const App = () => {
       <div className="App">
         {loading && <Spinner />}
         {!loading &&
-          Array.from(groupedSets()).map(([m, s]) => (
+          groupedPendingSets &&
+          Object.entries(groupedPendingSets).map(([m, s]) => (
             <SetGroup
               key={m}
-              metre={m}
+              metre={m as Metre}
               sets={s}
               onDoneChange={handleDoneChange}
             />
