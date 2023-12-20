@@ -20,16 +20,14 @@ const TuneSummary = (p: { tune: Tune }) => {
 
   return (
     <Col className="tuneSummary mb-2">
-      <Row className="mb-1">
-        <Col>
-          <h3>{tune.title}</h3>
-        </Col>
-      </Row>
-      <Col xs={{ offset: 2 }}>
-        <Badge bg="secondary" className="p-2 fs-4">
-          {tune.key}
-        </Badge>
-      </Col>
+      <span>
+        <h3>
+          <Badge bg="secondary" className="p-2 fs-4 mx-2">
+            {tune.key}
+          </Badge>
+          {tune.title}
+        </h3>
+      </span>
 
       {tune.hint && (
         <Accordion>
