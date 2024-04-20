@@ -262,6 +262,30 @@
     - title: Bang Your Frog on the Sofa
       key: Dm
       chordsB: [Bb, C, Dm, '']
+- metre: Reel
+  tunes:
+    - title: March of St Timothy
+      key: G
+      chordsA: [G, D7, Em, Bm, C, G, Am, D]
+      chordsB:
+        [
+          D7,
+          '-',
+          G,
+          '-',
+          D7,
+          '-',
+          G,
+          '-',
+          D7,
+          '-',
+          G,
+          '-',
+          'C C#dim',
+          'G Em',
+          'Am D',
+          G,
+        ]
 - metre: Reel48
   tunes:
     - title: Neckbelly
