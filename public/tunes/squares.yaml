@@ -51,3 +51,12 @@
       key: E modal
       chordsA: [E, D, A/C#]
       chordsB: [D, A/C#, E, (B)]
+- metre: Square
+  tunes:
+    - title: Sundown
+      notes: Rodney Miller
+      key: D
+      chordsA: [D, '-', F#m, '-', D, A, Bm, '-']
+      chordsB: [D, A, E, F#m, D, A, E, A]
+    - title: Sweetbriar
+      key: A
