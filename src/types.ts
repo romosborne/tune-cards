@@ -32,4 +32,5 @@ export type Set = {
   tags?: string[]
   instrument?: Instrument
   fav?: boolean
+  special?: boolean
 }

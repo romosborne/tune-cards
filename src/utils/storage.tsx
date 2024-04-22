@@ -42,10 +42,12 @@ export async function loadSets(skipCache = false): Promise<Set[]> {
   if (skipCache || local === null) {
     console.log('Loading from github')
 
-    const files = ['reels', 'jigs', 'squares', 'waltzes']
+    const files = ['reels', 'jigs', 'squares', 'waltzes', 'specials']
 
     const downloadFile = async (file: string) => {
-      const url = `https://raw.githubusercontent.com/romosborne/tune-cards/master/public/tunes/${file}.yaml`
+      const url = import.meta.env.VITE_LOCAL
+        ? `/tunes/${file}.yaml`
+        : `https://raw.githubusercontent.com/romosborne/tune-cards/master/public/tunes/${file}.yaml`
       const response = await fetch(url)
       const text = await response.text()
 

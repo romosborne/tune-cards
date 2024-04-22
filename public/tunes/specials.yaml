@@ -1,0 +1,10 @@
+- metre: Waltz
+  special: true
+  tunes:
+    - title: Happy Birthday
+      key: G
+      chordsA: [G, D7, D7, G, G, C Cm6, G D7, G]
+      hint: >
+        "G" [G,B,D]6 DD | E2D2G2 | "D7"F4 DD | E2D2A2 | "G" G4 DD |
+
+        d2B2G2 | "C" F2E2 "Cm6" cc | "G" B2G2 "D7" A2 | "G" G6

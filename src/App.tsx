@@ -14,7 +14,7 @@ const App = () => {
   const [sets, setSets] = useState<Set[]>([])
   const [completedSets, setCompletedSets] = useStickyState<Set[]>(
     [],
-    'CompletedSets',
+    'CompletedSets'
   )
   const [groupedPendingSets, setGroupedPendingSets] = useState<Record<
     Metre,
