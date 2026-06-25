@@ -74,6 +74,7 @@
         - F
         - C
         - ''
+      hint: FGA cAG | A2 c4
     - title: Mrs O'Sullivans
       key: C
       chordsA:
@@ -119,6 +120,7 @@
   tunes:
     - title: Cleveland Park
       key: Dm
+      notes: Can start with a drone + nikki potatoes
       chordsA:
         - Dm
         - Bb
@@ -144,6 +146,7 @@
     - title: Old Woman Tossed
       key: A
       notes: Jigs to reels!
+      hint: E | AcB Bce | fec B2A | AcB c2B| cAF F2E
     - title: Wrong Ant Rant
       key: Bm
 

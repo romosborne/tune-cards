@@ -294,3 +294,23 @@
     - title: Knock Dhu Knocked Up Reel
       key: Am
       hint: A,2 ED CA,A,G,|A,CEG A2 E^F|G2 BG cGBG|DEGD EDB,G,
+- metre: Reel
+  tunes:
+    - title: Mad Dan
+      key: A
+      hint: a3e fece | ABce fece | AAeA fAeA | BABc defe
+    - title: Dot the Dragon's Eyes
+      key: Em
+      hint: eB(3BBB B2AB|dB (3BBB B2AG|A2AB GAE2|DEB,D EGeg
+- metre: Reel
+  instrument: Flute
+  tags:
+    - smooth
+    - relaxing
+  tunes:
+    - title: Mad Orbin
+      key: F
+      hint: AG | F3c dcAG | F2f2 fedc | dc3-c2AG | A4-A2 DE|
+    - title: Tom Kruskals
+      key: G
+      hint: G2dB AGEG|DGGd cBAG
