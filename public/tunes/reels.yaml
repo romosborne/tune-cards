@@ -314,3 +314,13 @@
     - title: Tom Kruskals
       key: G
       hint: G2dB AGEG|DGGd cBAG
+- metre: Reel
+  tunes:
+    - title: Arizona
+      key: A
+      src: P2
+    - title: Blind Pig
+      key: Dm
+      src: Roddy
+      chordsA: [Dm, '', C, Bb C, Dm, '', Bb, C]
+      chordsB: [Dm, Bb, Gm, Bb C, Dm, Bb, Gm, Bb]

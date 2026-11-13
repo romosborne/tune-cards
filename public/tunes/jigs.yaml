@@ -192,6 +192,19 @@
     - title: I Have it Somewhere
       key: A
 
+- metre: Jig
+  tunes:
+    - title: Seanamhac Tube Station
+      notes: Use last four bars of GSR as the transition
+      key: Gm
+      chordsA: [Gm, '', F]
+      chordsB: [Bb, F, Dm]
+    - title: Gas Station Raptors
+      src: Burden Lake 
+      key: Bb
+      chordsA: [Bb, C, Dm, '', Bb, C, Gsus, '(Dm↑)']
+      chordsB: [Dm, Am, Bb, '', Dm, Am, F, F C/E, Dm, Am, Bb, '', Gsus, '', Am, '']
+
 - metre: SlipJig
   title: CAD slips
   tunes:

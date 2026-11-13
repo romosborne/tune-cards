@@ -1,0 +1,7 @@
+repos:
+- repo: https://github.com/k-ogawa-1988/yamale-pre-commit
+  rev: v0.0.2
+  hooks:
+    - id: yamale-validate
+      args: 
+        - '--schema=../../ci/sets-schema.yaml'

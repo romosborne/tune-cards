@@ -51,6 +51,15 @@
         - Gm
         - Ab
         - G
+      chordsB:
+        - '|:Cm'
+        - Fm
+        - Bb
+        - 'Eb:|x3'
+        - Fm
+        - Gm
+        - Ab
+        - G
       chordsC:
         - Cm
         - '-'

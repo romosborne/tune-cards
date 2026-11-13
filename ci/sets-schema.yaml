@@ -1,0 +1,22 @@
+list(include('set'))
+
+---
+set:
+  metre: enum('Reel', 'Reel48', 'Jig', 'SlipJig', 'Jig48', 'Square', 'Waltz')
+  title: str(required=False)
+  tags: list(str(), required=False)
+  tunes: list(include('tune'))
+  fav: bool(required=False)
+  instrument: enum('Flute', 'Fiddle', required=False)
+  special: bool(required=False)
+  
+---
+tune:
+  title: str()
+  key: str()
+  src: str(required=False)
+  hint: str(required=False)
+  notes: str(required=False)
+  chordsA: list(str(), required=False)
+  chordsB: list(str(), required=False)
+  chordsC: list(str(), required=False)
